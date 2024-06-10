@@ -251,22 +251,7 @@ export function Discover() {
         const scrollAmount = movieWidth * visibleMovies * 0.69; // Silly number :3
 
         if (direction === "left") {
-          if (carousel.scrollLeft <= 5) {
-            carousel.scrollBy({
-              left: carousel.scrollWidth,
-              behavior: "smooth",
-            }); // Scroll to the end
-          } else {
-            carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-          }
-        } else if (
-          carousel.scrollLeft + carousel.offsetWidth + 5 >=
-          carousel.scrollWidth
-        ) {
-          carousel.scrollBy({
-            left: -carousel.scrollWidth,
-            behavior: "smooth",
-          }); // Scroll to the beginning
+          carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
         } else {
           carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
         }

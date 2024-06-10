@@ -187,6 +187,10 @@
       "420": {
         "default": "What would you like to watch this 4/20?",
         "extra": ["Happy 4/20 🥳!"]
+      },
+      "69": {
+        "default": "Up for something spicy?",
+        "extra": ["Happy 69 day 😘!"]
       }
     }
   },
@@ -470,7 +474,7 @@
       "shortRemaining": "-{{timeLeft}}"
     },
     "turnstile": {
-      "description": "Please prove your humanity by completing the Captcha on the right. This is to keep sudo-flix.lol safe!",
+      "description": "Please prove your humanity by completing the quick challenge, this is to keep sudo-flix safe.",
       "error": "Failed to verify your humanity! Please try again.",
       "title": "Are You a Robot 🤖?",
       "verifyingHumanity": "Verifying your humanity... (^▽^)👍"
@@ -558,7 +562,8 @@
         "default": "Default",
         "gray": "Gray",
         "red": "Red",
-        "teal": "Teal"
+        "teal": "Teal",
+        "blck": "BLCK"
       },
       "title": "Appearance"
     },
