@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, To, useNavigate } from "react-router-dom";
 
 import { NoUserAvatar, UserAvatar } from "@/components/Avatar";
 import { IconPatch } from "@/components/buttons/IconPatch";
@@ -23,6 +23,11 @@ export function Navigation(props: NavigationProps) {
   const bannerHeight = useBannerSize();
   const navigate = useNavigate();
   const { loggedIn } = useAuth();
+
+  const handleClick = (path: To) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
 
   return (
     <>
@@ -84,6 +89,7 @@ export function Navigation(props: NavigationProps) {
               <Link
                 className="block tabbable rounded-full text-xs ssm:text-base"
                 to="/"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 <BrandPill clickable header />
               </Link>
